@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>UserCard</title>
+</head>
+<body>
+    <div id="navBar">
+        <div class="container flexBoxCenter">
+            <div id= "leftNav" class="flexBoxCenter">
+                <h1>Profile</h1>
+                <p>Home</p>
+                <p class ="active"> My Profile </p>
+                <p>Find Connections</p>
+            </div>
+            <div id="rightNav">
+                <button id="signOut">Sign Out</button>
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <div class="container flexBoxStart">
+            <div id="main">
+                <div id="userCard" >
+                    <div class="banner"></div>
+                    <img class="profileImg" src="images/profile.jpg" alt="profile photo">
+                    <div class="details border">
+                        <h2>Jase Kraft</h2>
+                        <div class="row">
+                            <img class="icon" src="images/icons/map-marker.png" alt="location icon">
+                            <h3>Fargo, ND</h3>
+                        </div>
+                        <p>Developer | Engineer | Problem Solver <br>
+                            Master of shadows and the Internet!</p>
+                        <div class="row">
+                            <p class="settings">&#9881;</p>
+                            <a onclick="addInput()">edit profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="education" >
+                    <div class="smallBanner">
+                        <h2>Education</h2>
+                    </div>
+                    <div class="border details">
+                        <h3>Coding Dojo - Full Stack Bootcamp</h3>
+                        <h4>August 2021 - November 2021</h4>
+                        <p>Triple black belt in Python, MERN and Java</p>
+                    </div>
+                </div>
+            </div>
+            <div id="rightSide">
+                <div id="connectionRequest" class ="right">
+                    <div class="smallBanner">
+                        <h5>2</h5>
+                        <h2>Connection Requests</h2>
+                    </div>
+                    <div class ="border details">
+                        <div class = "photoName">
+                            <div class="leftName">
+                                <img src="images/todd-s.jpg" alt="">
+                                <p>Todd E</p>
+                            </div>
+                            <div class="acceptOptions">
+                                <img src="images/icons/accept-circle.png" alt="accept" onclick="addConnection(this)">
+                                <img src="images/icons/close-circle.png" alt="delete" onclick="removeConnection(this)">
+                            </div>
+                        </div>
+                        <div class = "photoName">
+                            <div class="leftName">
+                                <img src="images/phil-s.jpg" alt="">
+                                <p>Phil K</p>
+                            </div>
+                            <div class="acceptOptions">
+                                <img src="images/icons/accept-circle.png" alt="accept" onclick="addConnection(this)">
+                                <img src="images/icons/close-circle.png" alt="delete" onclick="removeConnection(this)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="connections" class="right">
+                    <div class="smallBanner">
+                        <h5>345</h5>
+                        <h2>Your Connections</h2>
+                    </div>
+                    <div class ="border details">
+                        <div class = "photoName">
+                            <div class="leftName">
+                                <img src="images/adrien-s.jpg" alt="">
+                                <p>Adrien D</p>
+                            </div>
+                        </div> 
+                        <div class = "photoName">
+                            <div class="leftName">
+                                <img src="images/anne-s.jpg" alt="">
+                                <p>Anne J</p>
+                            </div>
+                        </div> 
+                        <div class = "photoName">
+                            <div class="leftName">
+                                <img src="images/alayne-s.jpg" alt="">
+                                <p>Alayne T</p>
+                            </div>
+                        </div> 
+                        <div class = "photoName">
+                            <div class="leftName">
+                                <img src="images/arry-s.jpg" alt="">
+                                <p>Arry Y</p>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="border">
+                        <a href="index.html">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
